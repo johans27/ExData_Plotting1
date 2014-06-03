@@ -14,7 +14,7 @@ datafinal <- subset(data, Date =="1/2/2007" | Date == "2/2/2007")
 str(datafinal)
 summary(datafinal)
 
-# Transforming Data and Time variables in order to create plot 2. First, install lubridate package
+# Transforming Data and Time variables in order to create plot 3. First, install lubridate package
 library(lubridate)
 datafinal$DateTime <- paste(datafinal$Date, datafinal$Time)
 datafinal$DataTimeCorrect <- dmy_hms(datafinal$DateTime)
